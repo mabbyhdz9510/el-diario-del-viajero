@@ -1,0 +1,181 @@
+
+body {
+    
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background:rgba(130, 31, 177, 0.815);
+    color: #333;
+}
+
+/* Contenedor general */
+#general {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ENCABEZADO  */
+header {
+  background-color: rgba(196, 153, 245, 0.438);
+    background-image: url(img/logo1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    color: rgba(245, 245, 220, 0);
+    text-align: center;
+    padding: 50px;
+    margin:0 auto;
+}
+
+header h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: rgba(216, 196, 21, 0);
+}
+
+
+/* MENÚ PRINCIPAL */
+
+#menu ul {
+    background: #622099c5;
+    border-bottom: 2px solid #c7b376;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#menu li {
+    margin: 0 25px;
+}
+
+#menu a {
+    color: #e3d6b1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    transition: color .3s, transform .3s;
+}
+
+#menu ul li a:hover,
+#menu ul li a:focus {
+    background: #dd86f3c0;
+    color: rgb(51, 11, 78);
+    border-radius: 8px;
+}
+
+/* focus*/
+#menu ul li a:focus {
+    outline: 2px solid #660b8a;
+    border-radius: 5px;
+}
+
+/* ============================
+   SECCIÓN PRINCIPAL
+=============================== */
+#Contenido-principal {
+    margin-top: 20px;
+}
+
+#Contenido-principal img{
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(247, 234, 57, 0.63);
+    margin-bottom:50px;
+}
+
+#principal-contenedor {
+    text-align: center;
+}
+
+#principal-contenedor h2 {
+    font-size: 50px;
+    color: #fffcf3;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#principal-contenedor p {
+   font-family:'Times New Roman', Times, serif;
+   color: #fffcf3;
+    margin: 25px auto;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* ============================
+   SECCIÓN ANIME + CAJA LATERAL
+=============================== */
+
+.anime-section {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 50px;
+}
+
+.anime-section img {
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.25);
+    
+}
+
+.anime-section h2 {
+    margin: 50px;
+    font-size: 50px;
+    color: #fffcf3;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/* CAJA DE ICONOS */
+.social-box {
+    margin: 15px;
+    position:static;
+    float:right;
+    top: 10%;
+    right: 50px; /* AJUSTA LA DISTANCIA A LA DERECHA */
+    transform: translateY(-125%);
+
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px;
+    width: 70px;
+
+    border-radius: 15px;
+    border: 2px solid #d3c299;
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ICONOS */
+.social-box img {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+
+/* EFECTO GLOW TIPO GENSHIN */
+.social-box img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 12px rgba(255, 223, 120, 0.9);
+}
+
+/* ============================
+   FOOTER
+=============================== */
+#pie {
+    margin-top: 740px;
+    text-align: center;
+    padding: 20px;
+    background:  rgba(196, 153, 245, 0.438);
+    color: #410458;
+    border-top: 2px solid #c7b376;
+}

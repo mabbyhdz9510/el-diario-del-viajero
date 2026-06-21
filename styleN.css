@@ -1,0 +1,138 @@
+body {
+    background-image: url(nac/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header h1{
+    background-color:  rgba(12, 5, 73, 0.651); 
+    background-image: url(nac/anemo\ \(4\).png);   
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:contain;
+    color:#ecce88;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    font-size: 2.5em;
+    padding: 40px;
+    margin: 0 ;
+
+}
+
+
+/* MENÚ */
+#menu ul {
+    background-color: rgba(12, 5, 73, 0.555);           
+    padding: 12px;
+    color: #070974dc;
+    border-top: solid;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+#menu a {
+    color: #ffd88c;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#menu ul li a:hover,
+#menu ul li a:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fdd9d9;
+    transform: scale(1.1);
+}
+
+/* active */
+#menu ul li a:active {
+    color: #ffe2a9;
+}
+
+
+/* focus*/
+#menu ul li a:focus {
+    outline: 2px solid #ffd88c;
+    border-radius: 5px;
+}
+
+h2{
+   text-align: left;
+    color: rgb(255, 248, 211);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+/* SECCIÓN DE NACIONES */
+.nacion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255,255,255,0.05);
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid #d4b46a;
+    transition: 0.4s ease;
+}
+
+/* efecto hover en toda la tarjeta */
+.nacion:hover {
+    background-color: rgba(255,255,255,0.12);
+    transform: translateY(-6px); /* Transformación */
+}
+
+/*IMÁGENES DE NACIONES */
+.nacion img {
+    border-radius: 10px;
+    width: 150px;
+    transition: transform 0.4s ease;
+}
+
+/* hover sobre imagen */
+.nacion img:hover {
+    transform: scale(1.08) rotate(1deg);
+}
+
+/*TEXTOS DE NACIONES*/
+.nacion h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffd88c;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+/* hover del título */
+.nacion h3:hover {
+    color: #fff;
+}
+
+/* por si usas div para acomodar texto */
+.nacion div {
+    max-width: 70%;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+#pie {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+    background:  rgba(12, 5, 73, 0.555);
+    color: #e3d6b1;
+    border-top: 2px solid #c7b376;
+}

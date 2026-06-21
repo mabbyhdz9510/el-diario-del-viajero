@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <link rel="stylesheet" href="styleP.css">
+</head>
+
+<body>
+
+  <div id="general">
+
+        <header>
+            <h1>Personajes</h1>
+        </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="personajes.html">PERSONAJES</a></li>
+            <li><a href="elementos.html">ELEMENTOS</a></li>
+            <li><a href="naciones.html">NACIONES</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido-principal">
+         <div>
+        <h2>PERSONAJES</h2>
+        </div>
+
+        <section id="personajes">
+
+              <div class="favorito">
+                 <img src="per/kazuha.png" alt="" width="200px">
+                 <div>
+                      <h3>KAEDEHARA KAZUHA</h3>
+                      <p><b>Nación: </b> Inazuma</p>
+                      <p><b>Visión: </b> Anemo</p>
+                      <p><i>Un samurái errante de Inazuma con alma poética. Aunque su pasado está marcado por pérdidas, Kazuha mantiene una calma serena y una profunda conexión con la naturaleza. Su forma de pelear es tan elegante como sus versos. </i></p>
+                 </div>
+              </div>
+
+              <div class="favorito">
+                 <img src="per/Flins.png" alt="" width="200px">
+                 <div>
+                      <h3>FLINS</h3>
+                      <p><b>Nación: </b> Nodkrai</p>
+                      <p><b>Visión: </b> Electro</p>
+                      <p><i>Kyryll Chudomiróvich Flins, soldado ratnik. Su personalidad es seria, enfocada y cada movimiento que hace está calculado con precisión militar. Controla el poder Electro con una eficiencia impresionante, canalizando descargas exactas y rápidas que reflejan su carácter frío, directo y confiado. Aunque no es muy expresivo, demuestra su lealtad y compromiso a través de sus acciones. </i></p>
+                 </div>
+              </div>
+
+               <div class="favorito">
+                 <img src="per/Kinich.jpg" alt="" width="200px">
+                 <div>
+                      <h3>KINICH</h3>
+                      <p><b>Nación: </b> Natlan</p>
+                      <p><b>Visión: </b> Dendro</p>
+                      <p><i>Un cazasaurios que viaja junto al autoproclamado "Señor de los Dragones", suele aceptar encargos poco populares y es experto en medir el precio de las cosas.Su espíritu ardiente refleja la cultura de su nación, donde la lucha, el honor y la fuerza interior son fundamentales. </i></p>
+                 </div>
+              </div>
+
+               <div class="favorito">
+                 <img src="per/Wriothesley.jpg" alt="" width="200px">
+                 <div>
+                      <h3>WRIOTHESLEY</h3>
+                      <p><b>Nación: </b> Fontaine</p>
+                      <p><b>Visión: </b> Cryo</p>
+                      <p><i>El alcalde del Fuerte Merópide, condecorado con el titulo de "Duque", el titulo honorifico más alto que se le puede conceder a un ciudadano de Fontaine. Suele mantener un perfil bajo y es una persona serena y en la que se puede confiar. </i></p>
+                 </div>
+              </div>
+
+               <div class="favorito">
+                 <img src="per/Arlechino.jpg" alt="" width="200px">
+                 <div>
+                      <h3>ARLECCHINO</h3>
+                      <p><b>Nación: </b> Fontaine</p>
+                      <p><b>Visión: </b> Pyro</p>
+                      <p><i>La Sota, la cuarta de Los Once de los Fatui, conocida como "Padre" por los niños de la Casa de la Hoguera. Una estratega peligrosa, calculadora y carismática. Su poder y liderazgo la convierten en una de las figuras más temidas de los Fatui. </i></p>
+                 </div>
+              </div>
+
+               <div class="favorito">
+                 <img src="per/Navia.png" alt="" width="200px">
+                 <div>
+                      <h3>NAVIA</h3>
+                      <p><b>Nación: </b> Fontaine</p>
+                      <p><b>Visión: </b> Geo</p>
+                      <p><i>La siempre radiante presidenta de Spina di Rosula, combina calidez con un impresionante talento para el combate. Dedicada a ayudar a los habitantes de Fontaine a resolver todo tipo de asuntos peligrosos. </i></p>
+                 </div>
+              </div>
+
+               <div class="favorito">
+                 <img src="per/Neuvillette.png" alt="" width="200px">
+                 <div>
+                      <h3>NEUVILLETTE</h3>
+                      <p><b>Nación: </b> Fontaine</p>
+                      <p><b>Visión: </b> Hydro</p>
+                      <p><i>El juez supremo de Fontaine. Es una persona poco accesible, tal vez por su personalidad, o tal vez porque guarda un origen ancestral que lo conecta profundamente con el agua. </i></p>
+                 </div>
+              </div>
+
+        
+
+        </section>
+
+      </div>
+        <footer id="pie">
+            
+           <p>© Personajes Favoritos</p>
+        
+        </footer>
+
+    </main>
+<div id="lightbox">
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    // Seleccionar todas las imágenes de personajes
+    const imgs = document.querySelectorAll(".favorito img");
+    const lightbox = document.getElementById("lightbox");
+    const lightImg = document.getElementById("lightbox-img");
+
+    imgs.forEach(img => {
+        img.addEventListener("click", () => {
+            lightImg.src = img.src;
+            lightbox.style.display = "flex";
+        });
+    });
+
+    // Cerrar lightbox al hacer click
+    lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+</script>
+
+  
+</body>
+</html>

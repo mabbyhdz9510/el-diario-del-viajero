@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos</title>
+    <link rel="stylesheet" href="styleE.css">
+</head>
+<body>
+
+<div id="general">
+
+    <header>
+        <p>Visiones</p>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="personajes.html">PERSONAJES</a></li>
+            <li><a href="elementos.html">ELEMENTOS</a></li>
+            <li><a href="naciones.html">NACIONES</a></li>
+        </ul>
+    </nav>
+    
+
+    <main id="contenido-principal">
+
+        <div>
+            <h1>HABILIDADES ELEMENTALES</h1>
+        </div>
+
+        <section class="elementos">
+
+            <!-- PYRO -->
+            <label class="tarjeta" for="pyro">
+                <img src="vis/pyro.png" alt="">
+                <h2>PYRO</h2>
+            </label>
+
+            <!-- HYDRO -->
+            <label class="tarjeta" for="hydro">
+                <img src="vis/hydro.png" alt="">
+                <h2>HYDRO</h2>
+            </label>
+
+            <!-- CRYO -->
+            <label class="tarjeta" for="cryo">
+                <img src="vis/cryo.png" alt="">
+                <h2>CRYO</h2>
+            </label>
+
+            <!-- DENDRO -->
+            <label class="tarjeta" for="dendro">
+                <img src="vis/dendro.png" alt="">
+                <h2>DENDRO</h2>
+            </label>
+
+            <!-- ELECTRO -->
+            <label class="tarjeta" for="electro">
+                <img src="vis/electro.png" alt="">
+                <h2>ELECTRO</h2>
+            </label>
+
+            <!-- GEO -->
+            <label class="tarjeta" for="geo">
+                <img src="vis/geo.png" alt="">
+                <h2>GEO</h2>
+            </label>
+
+            <!-- ANEMO -->
+            <label class="tarjeta" for="anemo">
+                <img src="vis/anemo.png" alt="">
+                <h2>ANEMO</h2>
+            </label>
+
+        </section>
+
+        <!-- RADIO BUTTONS -->
+        <input type="radio" name="elemento" id="pyro" hidden>
+        <input type="radio" name="elemento" id="hydro" hidden>
+        <input type="radio" name="elemento" id="cryo" hidden>
+        <input type="radio" name="elemento" id="dendro" hidden>
+        <input type="radio" name="elemento" id="electro" hidden>
+        <input type="radio" name="elemento" id="geo" hidden>
+        <input type="radio" name="elemento" id="anemo" hidden>
+
+        <!-- CAJAS DE INFO -->
+
+        <div id="pyroToggle-box" class="content-box">
+            <h3>Pyro</h3>
+            <h4><i>El elemento del fuego</i></h4>
+            <p>Usualmente, es brindado a aquellos con gran determinación y coraje, así como una ambición que les permita seguir adelante con sus deseos.</p>
+            <img src="vis/natlan.png" alt="" width="300px">
+        </div>
+
+        <div id="hydroToggle-box" class="content-box">
+            <h3>Hydro</h3>
+            <h4><i>El elemento del agua</i></h4>
+            <p>No se sabe mucho del mismo, pero se sabe que la Visión Hydro se brinda a aquellos con un fuerte sentido de la justicia o la lealtad.</p>
+            <img src="vis/fontaine.png" alt="" width="300px">
+        </div>
+
+        <div id="cryoToggle-box" class="content-box">
+            <h3>Cryo</h3>
+            <h4><i>El elemento del hielo</i></h4>
+            <p>Se desconoce mucho del mismo, sin embargo, sabemos que es otorgado a las personas solitarias o quienes tengan una gran aflicción consigo.</p>
+            <img src="vis/nodkai.jpg" alt="" width="300px">
+        </div>
+
+        <div id="dendroToggle-box" class="content-box">
+            <h3>Dendro</h3>
+            <h4><i>El elemento del naturaleza</i></h4>
+            <p>Al ser un aspecto de la Diosa de la Sabiduría, está intrínsecamente conectado al conocimiento y la información. Por tanto, es brindado a aquellos deseosos de entender el mundo y eruditos de gran conocimiento.</p>
+            <img src="vis/sumeru.png" alt="" width="300px">
+        </div>
+
+        <div id="electroToggle-box" class="content-box">
+            <h3>Electro</h3>
+            <h4><i>El elemento del trueno</i></h4>
+            <p>Correlacionado con el concepto de Eternidad, es brindado a aquellos que persisten en sus ideales y ambiciones.</p>
+            <img src="vis/inazuma.png" alt="" width="300px">
+        </div>
+
+        <div id="geoToggle-box" class="content-box">
+            <h3>Geo</h3>
+            <h4><i>El elemento del terrenal</i></h4>
+            <p>A diferencia del resto, este podría considerarse como un elemento "sólido" que forma la tierra y los minerales, posiblemente extendiéndose a las estrellas. Quienes reciben una Visión Geo son personas con una voluntad férrea y nobleza incomparables.</p>
+            <img src="vis/liyue.png" alt="" width="300px">
+        </div>
+
+        <div id="anemoToggle-box" class="content-box">
+            <h3>Anemo</h3>
+            <h4><i>El elemento del aire</i></h4>
+            <p>Asociado con la libertad y el tiempo mismo. Quienes reciben una Visión Anemo son personas con un espíritu libre y con la voluntad para luchar por su libre albedrío.</p>
+            <img src="vis/mondstadt.png" alt="" width="300px">
+        </div>
+
+        <footer id="pie">
+            <p>© Elementos</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
